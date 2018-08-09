@@ -1,5 +1,4 @@
-#write out your code here
-
+#METHOD 1
 def least_coins(cents)
   number_of_coins = []
   coins_value = [25, 10, 5, 1]
@@ -19,5 +18,11 @@ def least_coins(cents)
   least_coins[:pennies] = number_of_coins[3]
   
   return least_coins
-
 end
+
+#METHOD 2 
+def least_coins(cents)
+  quarters = cents/25
+  cents %= 25
+  
+  dimes = cents/10
