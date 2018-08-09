@@ -40,7 +40,7 @@ def least_coins(cents)
   least_coins[:nickels] = nickels
   least_coins[:pennies] = pennies
   
-  return cents, least_coins
+  return least_coins
 end
 
 puts least_coins(93)
