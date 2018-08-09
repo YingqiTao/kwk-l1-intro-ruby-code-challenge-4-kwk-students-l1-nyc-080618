@@ -22,7 +22,20 @@ end
 
 #METHOD 2 
 def least_coins(cents)
+  least_coins = {}
   quarters = cents/25
   cents %= 25
   
   dimes = cents/10
+  cents %= 10
+  
+  nickles = cents/5 
+  cents %= 5 
+  
+  pennies = cents/1 
+  cents %= 1
+  
+  least_coins[:quarters] = quarters
+  least_coins[:dimes] = dimes
+  least_coins[:nickels] = nickles
+  least_coins[:pennies] = pennies
